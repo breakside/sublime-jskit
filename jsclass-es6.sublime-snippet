@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+class ${1:MyClass} extends ${2:JSObject}{
+
+	init(){
+		super.init();
+	}
+
+	$3
+
+}
+
+$1.initialize();
+]]></content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.js - comment</scope>
+	<description>JSClass ES6 Definition</description>
+</snippet>

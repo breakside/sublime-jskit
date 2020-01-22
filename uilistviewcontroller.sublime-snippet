@@ -1,0 +1,58 @@
+<snippet>
+	<content><![CDATA[
+JSClass("${1:My}${2:ListViewController}", UIListViewController, {
+
+	items: null,
+
+	// MARK: - View Lifecycle
+
+	viewDidLoad: function(){
+		$1$2.\$super.viewDidLoad.call(this);
+		this.listView.registerCellClassForReuseIdentifier(UIListViewCell, "item");
+		this.items = [
+			'One',
+			'Two',
+			'Three'
+		];
+		$3
+	},
+
+	viewWillAppear: function(animated){
+		$1$2.\$super.viewWillAppear.call(this, animated);
+	},
+
+	viewDidAppear: function(animated){
+		$1$2.\$super.viewDidAppear.call(this, animated);
+	},
+
+	viewWillDisappear: function(animated){
+		$1$2.\$super.viewWillDisappear.call(this, animated);
+	},
+
+	viewDidDisappear: function(animated){
+		$1$2.\$super.viewDidDisappear.call(this, animated);
+	},
+
+	// MARK: - List View Data Source
+
+	numberOfSectionsInListView: function(listView){
+		return 1;
+	},
+
+	numberOfRowsInListViewSection: function(listView, sectionIndex){
+		return 0;
+	},
+
+	cellForListViewAtIndexPath: function(listView, indexPath){
+		var cell = listView.dequeueReusableCellWithIdentifier("item", indexPath);
+		var item = this.items[indexPath.row];
+		cell.titleLabel.text = item;
+		return cell;
+	},
+
+});
+]]></content>
+	<tabTrigger>UIListViewController</tabTrigger>
+	<scope>source.js - comment</scope>
+	<description>UIListViewController Subclass</description>
+</snippet>

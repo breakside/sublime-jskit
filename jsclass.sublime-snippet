@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+JSClass("${1:MyClass}", ${2:JSObject}, {
+
+	init: function(){
+		$1.\$super.init.call(this);
+	},
+
+	$3
+
+});
+]]></content>
+	<tabTrigger>JSClass</tabTrigger>
+	<scope>source.js - comment</scope>
+	<description>JSClass Definition</description>
+</snippet>

@@ -1,0 +1,34 @@
+<snippet>
+	<content><![CDATA[
+JSClass("${1:My}ViewController", ${2:UIViewController}, {
+
+	// MARK: - View Lifecycle
+
+	viewDidLoad: function(){
+		$1ViewController.\$super.viewDidLoad.call(this);
+	},
+
+	viewWillAppear: function(animated){
+		$1ViewController.\$super.viewWillAppear.call(this, animated);
+	},
+
+	viewDidAppear: function(animated){
+		$1ViewController.\$super.viewDidAppear.call(this, animated);
+	},
+
+	viewWillDisappear: function(animated){
+		$1ViewController.\$super.viewWillDisappear.call(this, animated);
+	},
+
+	viewDidDisappear: function(animated){
+		$1ViewController.\$super.viewDidDisappear.call(this, animated);
+	},
+
+	$3
+
+});
+]]></content>
+	<tabTrigger>UIViewController</tabTrigger>
+	<scope>source.js - comment</scope>
+	<description>UIViewController Subclass</description>
+</snippet>

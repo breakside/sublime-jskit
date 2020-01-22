@@ -1,0 +1,17 @@
+{
+    "scope": "source.js comment.line.double-slash.js",
+    "completions": [
+        {"trigger": "import\tfile", "contents": "import \"${1:Filename}.js\""},
+        {"trigger": "import\tframework", "contents": "import ${1:Framework}"},
+        {"trigger": "import Foundation", "contents": "import Foundation"},
+        {"trigger": "import UIKit", "contents": "import UIKit"},
+        {"trigger": "import ServerKit", "contents": "import ServerKit"},
+        {"trigger": "import TestKit", "contents": "import TestKit"},
+        {"trigger": "import Dispatch", "contents": "import Dispatch"},
+        {"trigger": "import SecurityKit", "contents": "import SecurityKit"},
+        {"trigger": "import AuthKit", "contents": "import AuthKit"},
+        {"trigger": "import PDFKit", "contents": "import PDFKit"},
+        {"trigger": "import ImageKit", "contents": "import ImageKit"},
+        {"trigger": "import FontKit", "contents": "import FontKit"},
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "scope": "source.js comment.line.double-slash.js",
+    "completions": [
+        {"trigger": "feature", "contents": "feature ${1:expression}"}
+    ]
+}

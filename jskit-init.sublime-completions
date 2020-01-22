@@ -1,0 +1,7 @@
+{
+    "scope": "source.js meta.function-call.js meta.group.js meta.object-literal.js - meta.property.object.js",
+    "completions": [
+        {"trigger": "init\tInit Method", "contents": "init$1: function(${2:args}){\n\t${3:YourClass}.\\$super.init$1.call(this${2/^(.+)$/(?1, $1)/});$4\n},"},
+        {"trigger": "initWithSpec\tInit Method", "contents": "initWithSpec: function(spec){\n\t${1:YourClass}.\\$super.initWithSpec.call(spec);\n\tif (spec.containsKey(\"${2:property}\")){\n\t\tthis.$2 = spec.valueForKey(\"$2\"$3);\n\t}$4\n},"}
+    ]
+}
