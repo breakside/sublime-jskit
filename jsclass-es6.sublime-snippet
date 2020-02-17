@@ -2,10 +2,6 @@
 	<content><![CDATA[
 class ${1:MyClass} extends ${2:JSObject}{
 
-	init(){
-		super.init();
-	}
-
 	$3
 
 }
