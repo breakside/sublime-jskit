@@ -14,7 +14,7 @@ assertions = [
     ("TKAssertNull", "TKAssertNull(${1:value});"),
     ("TKAssertNotUndefined", "TKAssertNotUndefined(${1:value});"),
     ("TKAssertUndefined", "TKAssertUndefined(${1:value});"),
-    ("TKAssertThrows", "TKAssertThrows(${1:function});"),
+    ("TKAssertThrows", "TKAssertThrows(function(){\n\t$1\n});"),
     ("TKAssertLessThan", "TKAssertLessThan(${1:result}, ${2:expected});"),
     ("TKAssertLessThanOrEquals", "TKAssertLessThanOrEquals(${1:result}, ${2:expected});"),
     ("TKAssertGreaterThan", "TKAssertGreaterThan(${1:result}, ${2:expected});"),
