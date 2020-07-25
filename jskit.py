@@ -20,6 +20,7 @@ assertions = [
     ("TKAssertGreaterThan", "TKAssertGreaterThan(${1:result}, ${2:expected});"),
     ("TKAssertGreaterThanOrEquals", "TKAssertGreaterThanOrEquals(${1:result}, ${2:expected});"),
     ("TKAssertArrayEquals", "TKAssertArrayEquals(${1:result}, ${2:expected});"),
+    ("TKAssertType", "TKAssertType(${1:result}, ${2:expectedType});")
 ]
 
 class JSKitAutocomplete(sublime_plugin.EventListener):
