@@ -40,7 +40,7 @@ JSClass("${1:My}${2:ListViewController}", UIListViewController, {
 	},
 
 	numberOfRowsInListViewSection: function(listView, sectionIndex){
-		return 0;
+		return this.items.length;
 	},
 
 	cellForListViewAtIndexPath: function(listView, indexPath){
