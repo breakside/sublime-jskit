@@ -35,7 +35,7 @@ class JSKitAutocomplete(sublime_plugin.EventListener):
 
     def imports(self, view):
         imports = []
-        regions = view.split_by_newlines(Region(0, 1024))
+        regions = view.split_by_newlines(Region(0, 2048))
         for region in regions:
             line = view.substr(region)
             if line[0:11] == '// #import ':
