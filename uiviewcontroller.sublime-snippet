@@ -2,6 +2,7 @@
 	<content><![CDATA[
 JSClass("${1:My}ViewController", ${2:UIViewController}, {
 
+	// -----------------------------------------------------------------------
 	// MARK: - View Lifecycle
 
 	viewDidLoad: function(){

@@ -4,6 +4,7 @@ JSClass("${1:My}${2:ListViewController}", UIListViewController, {
 
 	items: null,
 
+	// -----------------------------------------------------------------------
 	// MARK: - View Lifecycle
 
 	viewDidLoad: function(){
@@ -33,6 +34,7 @@ JSClass("${1:My}${2:ListViewController}", UIListViewController, {
 		$1$2.\$super.viewDidDisappear.call(this, animated);
 	},
 
+	// -----------------------------------------------------------------------
 	// MARK: - List View Data Source
 
 	numberOfSectionsInListView: function(listView){
